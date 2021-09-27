@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
             sys.stdout = out
             addition.add_two(2, 4)
             output = out.getvalue().strip()
-            assert output == "The sum of 2 and 4 is 6"
+            assert output == "the sum of 2 and 4 is 6"
         finally:
             sys.stdout = saved_stdout
 
@@ -52,7 +52,7 @@ class MyTestCase(unittest.TestCase):
             sys.stdout = out
             addition.add_two(12,-9)
             output = out.getvalue().strip()
-            assert output == "The sum of 12 and -9 is 3"
+            assert output == "the sum of 12 and -9 is 3"
         finally:
             sys.stdout = saved_stdout
 
