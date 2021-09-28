@@ -14,6 +14,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_triangle_area(self):
         self.assertEqual(6.0, triangle_area.area(3, 4, 5))
+        #  two more tests of my own below here
+        self.assertEqual(30.0, triangle_area.area(5, 12, 13))
+        self.assertEqual(84.0, triangle_area.area(7,24,25))
 
 
 if __name__ == '__main__':
